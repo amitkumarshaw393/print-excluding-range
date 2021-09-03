@@ -1,0 +1,40 @@
+/*
+input:
+7 3 6
+2 5 1 8 6 9 4
+output:
+2 1 8 9  
+[l=3 and 4=6
+print element which are not in range of 3 and 6]
+*/
+
+
+#include<iostream>
+#include<vector>
+
+using namespace std;
+
+int main(void)
+{
+	int c,a,n,m;
+	cout<<"enter the no. of elements ";
+	cin>>n;
+	vector<int>v;
+		vector<int>v1;
+	for(int i=0;i<n;i++)
+	{
+	cin>>a;
+	v.push_back(a);}
+	
+	cout<<"Enter the range";
+	cin>>c>>m;
+	for(auto x:v)
+	{
+		if(x>=c && x<=m)
+		continue;
+		else
+		v1.push_back(x);
+	}
+for(auto l:v1)
+cout<<l<<" ";	
+}
